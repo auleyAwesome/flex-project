@@ -93,13 +93,16 @@ img {
 }
 
 #squares {
+    color: gray;
     display: flex;
     justify-content: space-around;
     gap: 24px;
+    text-align: center;
 }
 
 .square {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -107,6 +110,40 @@ img {
     height: auto;
 }
 
+#quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+blockquote {
+    line-height: 1.5em;
+    font-size: 26px;
+    border-radius: 20px;
+    padding-left: 48px;
+    padding-bottom: 25px;
+    border-left: 15px solid lightgray;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+    display: inline;
+}
+
+blockquote p::before {
+    content: open-quote;
+    font-size: 2em;
+    vertical-align: -0.2em;
+}
+blockquote p::after {
+    content: close-quote;
+    font-size: 2em;
+    vertical-align: -0.2em;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
 /* OUTLINES HERE
 body {
     border: 5px solid black;
