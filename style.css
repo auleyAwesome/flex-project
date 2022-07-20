@@ -82,6 +82,7 @@ img {
 }
 
 #rando {
+    align-self: center;
     font-size: 36px;
     font-weight:bolder; 
     color: #1F2937;
@@ -98,10 +99,12 @@ img {
 }
 
 .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
     flex-basis: 0;
-    border: 5px solid brown;
-    height: 200px;
+    height: auto;
 }
 
 /* OUTLINES HERE
@@ -123,5 +126,8 @@ body {
 
 #topimage {
     border: 2px solid yellowgreen;
+}
+.square {
+    border: 5px solid brown;
 }
  OUTLINES END */
