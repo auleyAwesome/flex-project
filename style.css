@@ -23,8 +23,9 @@ body {
 }
 
 .headfoot {
+    padding: 0 15vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -61,7 +62,7 @@ a {
     font-weight: bolder;
     color: #F9FAF8;
 }
-button {
+#topbutt{
     width: 256px;
     height: 64px;
     border: none;
@@ -103,7 +104,7 @@ img {
 .square {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
     flex-basis: 0;
@@ -144,11 +145,83 @@ figcaption {
     font-style: italic;
     font-size: 14px;
 }
-/* OUTLINES HERE
+
+#section-4 {
+    height: 400px;
+    display: flex;
+    padding: 0 15vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#actioncall {
+    height: 200px;
+    border-radius: 10px;
+    padding: 0 5vw;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 48px;
+    background-color: #3882F6;
+}
+#left2 {
+    padding: 48px; 24px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#actiontext {
+    flex: 1;
+    flex-basis: 0; 
+    font-size: 24px;
+    font-weight: bolder;
+}
+#actionsubtext {
+    flex: 3;
+    flex-basis: 0;
+}
+#buttondiv {
+    align-self: center;
+    flex: 1;
+}
+
+#botbutt{
+    width: 150px;
+    height: 36px;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E5E7EB;
+    background-color: #3882F6;
+}
+
+#section-5 {
+    display: flex;
+    flex-direction: column;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 75px;
+    background-color: #1F2937;
+
+}
+
+
+
+/* BORDERS BELOW THIS POINT */
+
+/*
 body {
     border: 5px solid black;
 }
-#splash { 
+ #splash { 
     border: 3px solid green;
 }
 #hero {
@@ -167,4 +240,15 @@ body {
 .square {
     border: 5px solid brown;
 }
- OUTLINES END */
+#buttondiv {
+    border: solid 4px greenyellow;
+}
+#actiontext {
+    border: 4px solid orange;
+}
+#left2 {
+    border: 2px solid pink;
+}
+#actionsubtext {
+    border: solid 2px purple;
+}  */
