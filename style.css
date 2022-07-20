@@ -39,10 +39,11 @@ a {
     color: #E5E7EB;
 }
 
-#splash {
+.slice {
     padding: 100px 15vw;
     display: flex;
-    flex: 1 1 0;
+    flex-grow: 1;
+    flex-basis: 0;
     justify-content: space-between;
     gap: 48px;
 }
@@ -50,13 +51,14 @@ a {
 #left {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-grow: 1;
+    flex-basis: 0;
     gap: 16px;
 }
 
 #hero {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: bolder;
     color: #F9FAF8;
 }
 button {
@@ -71,12 +73,35 @@ button {
     filter: drop-shadow( 3px 3px 6px black);
 }
 #topimage {
-    flex: 1;
+    flex-grow: 1;
+    flex-basis: 0;
 }
-
 img {
     max-width: 100%;
     border-radius: 20px;
+}
+
+#rando {
+    font-size: 36px;
+    font-weight:bolder; 
+    color: #1F2937;
+}
+
+#info {
+    flex-direction: column;
+}
+
+#squares {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.square {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 5px solid brown;
+    height: 200px;
 }
 
 /* OUTLINES HERE
